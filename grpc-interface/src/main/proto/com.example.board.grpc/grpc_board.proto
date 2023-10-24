@@ -16,7 +16,7 @@ service Board {
 message GrpcBoardSaveRequest {
   string category_id = 2; // 필드 인덱스는 겹치지 않게 작성. 값 범위 등은 공식 문서 확인.
   string title = 3;
-  sint32 content = 4;
+  string content = 4;
   GrpcBoardStatus status = 5;
   repeated string tag = 6; // <<< 단수 네이밍 사용(알아서 네이밍 변환됨.)
 }
@@ -29,7 +29,7 @@ message GrpcBoard {
   string board_id = 1;
   string category_id = 2;
   string title = 3;
-  sint32 content = 4;
+  string content = 4;
   GrpcBoardStatus status = 5;
   repeated string tag = 6;
   google.protobuf.Timestamp created_at = 254;

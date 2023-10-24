@@ -1,6 +1,6 @@
 package com.example.board.natives.entity;
 
-import com.example.board.natives.entity.types.BoardStatus;
+import com.example.board.natives.domain.types.BoardStatus;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,7 +28,7 @@ public class BoardEntity {
     public String categoryId;
 
     public String title;
-    public Integer content;
+    public String content;
 
     public BoardStatus status;
 

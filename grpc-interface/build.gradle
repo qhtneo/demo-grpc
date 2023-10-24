@@ -6,6 +6,11 @@ plugins {
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
 repositories {
     mavenCentral()
 }
@@ -22,15 +27,19 @@ protobuf {
     protoc {
         artifact = 'com.google.protobuf:protoc:3.24.2'
     }
-    // generatedFilesBaseDir = "$projectDir/src/generated"
+
+    generatedFilesBaseDir = "$projectDir/src/generated"
+
     clean {
         delete generatedFilesBaseDir
     }
+
     plugins {
         grpc {
             artifact = 'io.grpc:protoc-gen-grpc-java:1.57.2'
         }
     }
+
     generateProtoTasks {
         all()*.plugins {
             grpc{}

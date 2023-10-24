@@ -1,4 +1,4 @@
-package com.example.board.natives.entity.types;
+package com.example.board.natives.domain.types;
 
 public enum BoardStatus {
     PENDING,

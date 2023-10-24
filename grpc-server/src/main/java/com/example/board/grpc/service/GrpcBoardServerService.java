@@ -1,7 +1,7 @@
 package com.example.board.grpc.service;
 
 import com.example.board.natives.domain.Board;
-import com.example.board.natives.entity.types.BoardStatus;
+import com.example.board.natives.domain.types.BoardStatus;
 import com.example.board.grpc.lib.BoardGrpc.BoardImplBase;
 import com.example.board.grpc.lib.GrpcBoard;
 import com.example.board.grpc.lib.GrpcBoardSaveReply;

@@ -1,6 +1,6 @@
-package com.example.board.natives.domain;
+package com.example.grpcclient.domain;
 
-import com.example.board.natives.domain.types.BoardStatus;
+import com.example.grpcclient.domain.types.BoardStatus;
 import lombok.Builder;
 import lombok.Getter;
 
