@@ -1,0 +1,3 @@
+rootProject.name = 'demo-grpc'
+include 'grpc-server'
+include 'grpc-client-webmvc'
