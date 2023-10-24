@@ -1,13 +1,11 @@
-package com.example.demo;
+package com.example.board;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoGrpcApplication {
-
+public class BoardApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DemoGrpcApplication.class, args);
+        SpringApplication.run(BoardApplication.class, args);
     }
-
 }
